@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<title>HTML</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<h1><a href="index.html">Web Application</a></h1>
+	</header>
+	<nav>
+		<ol>
+			<li><a href="1.html">html</a></li>
+			<li><a href="2.html">css</a></li>
+			<li><a href="3.html">javascript</a></li>
+		</ol>
+	</nav>
+	<div>
+			<h2>HTML 중요 태그 설명</h2>
+			<h3>HTML 표제</h3> 
+			<ol>
+			<h1>제목 1</h1>
+			<h2>제목 2</h2>
+			<h3>제목 3</h3>
+			<h4>제목 4</h4>
+			<h5>제목 5</h5>
+			<h6>제목 6</h6>
+			</ol>
+			<br><h3>Line Breaks</h3> 
+			check<br/> this<br/>out!
+			<br><h3>Paragraphs(단락)</h3> 
+			<p>Check</p>
+			<p>this</p>
+			<p>out!</p>
+			<p style="text-align: left;">Check</p>
+			<p style="text-align: center;">this</p>
+			<p style="text-align: right;">out!</p>
+			<br><h3>Horizontal Lines(수평선)</h3> 
+			Check
+			<hr />
+			this
+			<hr />out!
+			<hr width="20%">
+			<hr width="50%">
+			<hr width="75%">
+			<br><h3>주석</h3>
+			<!--주석!-->Check<!--주석!--> this <!--주석!-->
+			Out!<!--주석-->
+			<br><h3>List(리스트)</h3>
+			<ul>
+				<li>Volkswagen</li>
+				<li>Skoda</li>
+				<li>Chevrolet</li>
+			</ul>
+			<ul type="square">
+				<li>Volkswagen</li>
+				<li>Skoda</li>
+				<li>Chevrolet</li>
+			</ul>
+			<ul type="circle">
+				<li>Volkswagen</li>
+				<li>Skoda</li>
+				<li>Chevrolet</li>
+			</ul>
+			<ol>
+				<li>Volkswagen</li>
+				<li>Skoda</li>
+				<li>Chevrolet</li>
+			</ol>
+			<br><h3>링크 </h3>
+			<a href="http://www.naver.com/">네이버</a><br>
+			<a href="mailto:bob@ilearnhtml.com">-mailto 헤드- E-mail Bob</a><br>
+			<a href="tel:0036012345678">-tel 헤드- +36 012 345 678</a><br>
+			<a title="HTML Editor" href="https://htmlg.com/" target="_blank" rel="external">title은 tootip, target은 문서를 열 위치</a><br>		
+		</div>
+		<br>
+		<div>
+			<h2>HTML Image</h2>
+			파일 소스를 지정한다. <br>
+			<img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=1390&crop=1" />
+			<img width='200' height='200'
+				src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=1390&crop=1" />
+			<a href="https://github.com/">
+				<img width='200' height='200'
+					src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=1390&crop=1" />
+			</a><br>
+		</div>
+		<div>
+			<h2>HTML Table</h2>
+			<table cellpadding="20">
+					<caption style='background: darkolivegreen'>HTML Tutorial</caption>
+					<thead>
+					  <tr style='background: darkgray'>
+						<td>Logo</td>
+						<td>Header</td>
+						<td>Icons</td>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr style='background: aqua'>
+						<td colspan="2">Title</td>
+						<td rowspan="2">Sidebar</td>
+					  </tr>
+					  <tr style='background: aquamarine'>
+						<td colspan="2">
+						  Content <br />
+						  comes <br />
+						  here
+						</td>
+					  </tr>
+					</tbody>
+					<tfoot>
+							<tr style='background: chartreuse'>
+							  <td colspan="2">Footer</td>
+							  <td>Contact</td>
+							</tr>
+						  </tfoot>
+				  </table>
+		</div>
+	
+		<div>
+			<h2>Form 속성</h2>
+			<form action="/action.php" method="post">
+				text: <input type="text" name="yourname" maxlength="10" size="12" required /> <br />
+				number: <input type="number" name="no" min="0" max="100" step="10" value="30"> <br />
+				checkbox: <input type="checkbox" name="terms" value="tandc"> I accpept the terms <br />
+				radio: <input type="radio" name="gender" value="male" checked>Male
+				<input type="radio" name="gender" value="female">Female<br>
+				email: <input type="email" name="yourmail"> <br />
+				password: <input type="password" name="passw"> <br />
+				color: <input type="color" name="yourcolor"> <br />
+				date: <input type="date" name="birthday" min="1900-01-01" max="2010-01-01"> <br />
+				time: <input type="time" name="mytime"> <br />
+				date and time:<input type="datetime-local" name="time"> <br />
+				week: <input type="week" name="yourweek"> <br />
+				month: <input type="month" name="yourmonth"> <br />
+				range: <input type="range" name="myrange" min="0" max="100"> <br />
+				search: <input type="search" name="mysearch"> <br />
+				tel: <input type="tel" name="myphone"> <br />
+				url: <input type="url" name="website"> <br />
+				<input type="submit" value="Submit" /> <input type="reset">
+			</form>
+		</div>
+		<div>
+			<h2>Text 포멧</h2>
+			HTML 태그에는 인라인 요소와 블록 요소의 두가지 유형이 있습니다.<br>
+			블록 요소는 페이지에 스택으로 렌더링 되지만 인라인 요소는 기본적으로 행에 렌더링 됩니다. (CSS로 변경가능)
+			<p><strong>Block elements:</strong>&nbsp;&lt;h1&gt;, &lt;p&gt;, &lt;div&gt; etc.</p>
+			<p><strong>Inline elements:</strong> &lt;img /&gt;, &lt;span&gt;, &lt;strong&gt;, &lt;em&gt; etc.</p>
+			<ul>
+				<li>&lt;b&gt; – <b>Bold text</b></li>
+				<li>&lt;strong&gt; – <strong>Important text</strong></li>
+				<li>&lt;i&gt; – <i>Italic text</i></li>
+				<li>&lt;em&gt; – <em>Emphasized text</em></li>
+				<li>&lt;mark&gt; – <mark>Marked text</mark></li>
+				<li>&lt;small&gt; – <small>Small text</small></li>
+				<li>&lt;del&gt; – <del>Deleted text</del></li>
+				<li>&lt;ins&gt; – <ins>Inserted text</ins></li>
+				<li>&lt;sub&gt; – <sub>Subscript</sub> text</li>
+				<li>&lt;sup&gt; – <sup>Superscript</sup> text</li>
+				<li>&lt;span&gt; – <span>Group of inline elements, no visual difference by default</span></li>
+			</ul>
+		</div>
+</body>
+</html>

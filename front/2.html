@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main.css">
+	<style>
+		h3.in {
+			color: blue;
+		}
+
+		.flex{
+			width:50px;
+			height:50px;
+			background: red;
+			margin: 10px
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1><a href="index.html">Web Application</a></h1>
+	</header>
+	<nav>
+		<ol>
+			<li><a href="1.html">html</a></li>
+			<li><a href="2.html">css</a></li>
+			<li><a href="3.html">javascript</a></li>
+		</ol>
+	</nav>
+	<div>
+		<h2>CSS</h2>
+		CSS Style 배우기
+	</div>
+	<div>
+		<h2>HTML에 CSS 적용하는 방법은 3가지</h2>
+		3가지 방식의 우선순위는 인라인 스타일 > 내부스타일 > 외부스타일
+		<ol>
+			<li>인라인 스타일</li>
+			<li>내부 스타일 시트</li>
+			<li>외부 스타일 시트</li>
+		</ol>
+		<h3 style="color:red;">인라인 스타일</h3>
+		<h3 class="in">내부 스타일 시트</h3>
+		<h3 id='out'>외부 스타일 시트</h3>
+
+	</div>
+	<div>
+		<h2>CSS 선택자</h2>
+		<img width='700' src='http://www.nextree.co.kr/content/images/2016/09/yrkim-140327-selector-04.png'></image><br>
+		<ol><h3>선택자의 종류</h3>
+			<li> * { } html 페이지 내부의 모든 태그를 선택합니다.</li>
+			<li> [태그]{ } 태그 선택자 html 내부의 해당 태그를 선택합니다.</li>
+			<li> .myClass{ } 클래스 선택자 , 클래스 속성값이 myClass으로 지정된 요소를 선택합니다. </li>
+			<li> #myID{ } 클래스 선택자 , 클래스 속성값이 myId으로 지정된 요소를 선택합니다. </li>
+		</ol>
+		<ul><h3>Class를 써야할까요 id를 써야 할까요</h3>
+			<li>한 페이지에 여러번 반복 될 필요가 있는 스타일은 클래스 선택자</li>
+			<li>단 한번 유일하게 적용될 스타일은 ID 선택자</li>
+			<li>class속성은 어떤 분류 안에 포함된 요소의 특성을 정의하는 데 사용됩니다.</li>
+			<li>id속성은 어떤 요소에 대해 유일한 특성을 정의합니다. (HTML 문서에서 특정 id속성값은 오직 하나만 있어야 합니다.)</li>
+		</ul>
+	</div>
+	<p></p>
+	<div>
+		<h2>다양한 css 배워보기</h2>
+		<a href="https://html-css-js.com/css/generator/gradient/">CSS Cheat Sheet</a>
+	</div>
+	<div>
+		<h2>Inline과 Block 속성 이해하기</h2>
+		<h4>Inline 속성 특징 </h1>
+		<ul>
+			<li>줄을 바꾸지 않고 다른 요소와 함께 한 행에 위치하려는 성향</li>
+			<li>상,하단 외부여백(margin-top,margin-bottom) 속성을 정의해도 적용되지 않음 </li>
+			<li>인라인 요소는 상,하 여백은 margin이 아니라 line-height 속성에 의해 조작</li>
+			<li>width, height 너비와 높이 속성이 적용되지 않음, 내부 요소의 부피에 맞춰짐 </li>
+			<li>인라인 속성을 가진 태그끼리 연속으로 사용시 최소한 간격을 위해 자동 여백(5px) 발생</li>
+
+		</ul>
+		<h4>Black 속성 특징 </h1>
+			<ul>
+				<li>한 줄에 나열되지 않고 그 자체로 한 줄을 완전히 차지</li>
+				<li>블록 속성을 가지고 있는 태그는 기본으로 너비 100% 속성을 가지고 있음</li>
+				<li>margin, width, height 속성을 정의하면 모두 적용됨</li>
+				<li>특정 태그가 블록요소인지 아닌지 파악하는 방법은 css로 배경색을 입혀보면 됨</li>
+			</ul>
+			
+		<h4>Inline과 Block의 합성 속성</h1>
+			<ul>
+				<li>inlin-block 속성이 존제 , 인라인과 같이 한줄 이면서 margin,width,height 속성을 정의 표현</li>
+				<li>기본으로 가지고있는 태그는 없음 CSS를 통해 선언해주어야만 적용됨</li>
+				<li>margin, width, height 속성을 정의하면 모두 적용됨</li>
+				<li> p { display: inline-block }으로 사용</li>
+			</ul>
+		<h4>주의사항 : 인라인 속성 태그 안에 블럭 속성 태그를 넣으면 문법 오류가 발생</h4>
+			
+	</div>
+	<div>
+		<h2>flexbox의 기본 개념</h2>
+		<ul>
+			<li>display 값을 flex 혹은 inline-flex로 지정</li>
+			<li>이 값이 지정된 컨테이너의 1차자식 요소가 flex항목이 됩니다.</li>
+		</ul>
+		<div>
+		<div class="flex"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>
